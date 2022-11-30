@@ -1,14 +1,11 @@
-// read posts and comments 
-
-const express = require('express')
-const indexRouter = express.Router()
+const express = require('express');
+const indexRouter = express.Router();
 
 
-//require poste route and comment route here. this will be the index pg of all the routes 
+//require post and comment routesr here. this file will be the index of all routes used in the app 
 
-const commentsRouter = require('./commentsRoutes.js')
-const postsRouter = require('./postRoutes.js')
-
+const commentsRouter = require('./commentsRoutes.js');
+const postsRouter = require('./postRoutes.js');
 
 
 indexRouter.use("/post", postsRouter);
